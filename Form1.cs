@@ -167,7 +167,25 @@ namespace SacchieroElementoMultimediale
 
         private void btn_ordina_Click(object sender, EventArgs e)
         {
-
+            /*
+            basterebbe fare così, ma per dimostrare le capacità di programmazione implemento un semplice algoritmo di ordinamento (bubble sort)
+            Array.Sort(elementi, (x, y) => string.Compare(x.Titolo, y.Titolo));
+            */
+            for (int i = 0; i < elementi.Length - 1; i++)
+            {
+                for (int j = i + 1; j < elementi.Length; j++)
+                {
+                    if (string.Compare(elementi[i].Titolo, elementi[j].Titolo) > 0)
+                    {
+                        // scambia gli elementi
+                        ElementoMultimediale temporaneo = elementi[i];
+                        elementi[i] = elementi[j];
+                        elementi[j] = temporaneo;
+                    }
+                }
+            }
+            MessageBox.Show("Elementi multimediali ordinati per titolo");
+            lbl_ordinato.Text = "Elementi ordinati";
         }
 
         private void btn_VerificaUgualianza_Click(object sender, EventArgs e)

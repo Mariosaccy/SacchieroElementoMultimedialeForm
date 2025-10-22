@@ -24,7 +24,6 @@ namespace SacchieroElementoMultimediale
             {
                 Volume--;
             }
-            MessageBox.Show("Volume diminuito");
         }
         public void Louder()
         {
@@ -33,7 +32,6 @@ namespace SacchieroElementoMultimediale
             {
                 Volume++;
             }
-            MessageBox.Show("Volume aumentato");
         }
 
         public void Brighter()
@@ -43,7 +41,6 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita++;
             }
-            MessageBox.Show("Luminosità aumentata");
         }
         public void Darker()
         {
@@ -52,7 +49,6 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita--;
             }
-            MessageBox.Show("Luminosità diminuita");
         }
 
         public override string Play()

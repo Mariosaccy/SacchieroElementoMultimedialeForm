@@ -21,7 +21,6 @@ namespace SacchieroElementoMultimediale
             {
                 Volume--;
             }
-            MessageBox.Show("Volume diminuito");
         }
         public void Louder()
         {
@@ -30,7 +29,6 @@ namespace SacchieroElementoMultimediale
             {
                 Volume++;
             }
-            MessageBox.Show("Volume aumentato");
         }
 
         public override string Play()

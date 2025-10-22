@@ -157,12 +157,12 @@ namespace SacchieroElementoMultimediale
 
         private void btn_regola_Click(object sender, EventArgs e)
         {
-
+            new FinestraRegolazioni(elementi).ShowDialog(); // apro una nuova finestra per regolare gli elementi multimediali
         }
 
         private void btn_inferiori_Click(object sender, EventArgs e)
         {
-
+            new FinestraFilmDurataMinore(elementi).ShowDialog(); // apro una nuova finestra per visualizzare i filmati con durata minore
         }
 
         private void btn_ordina_Click(object sender, EventArgs e)

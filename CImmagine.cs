@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SacchieroElementoMultimediale
 {
@@ -21,7 +22,6 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita++;
             }
-            Console.WriteLine("Luminosità aumentata");
         }
         public void Darker()
         {
@@ -30,7 +30,6 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita--;
             }
-            Console.WriteLine("Luminosità diminuita");
         }
 
         public string Show()

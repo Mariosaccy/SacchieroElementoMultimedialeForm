@@ -57,6 +57,12 @@
     <Compile Include="FinestraEsegui.Designer.cs">
       <DependentUpon>FinestraEsegui.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinestraFilmDurataMinore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinestraFilmDurataMinore.Designer.cs">
+      <DependentUpon>FinestraFilmDurataMinore.cs</DependentUpon>
+    </Compile>
     <Compile Include="FinestraRegolazioni.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FinestraEsegui.resx">
       <DependentUpon>FinestraEsegui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinestraFilmDurataMinore.resx">
+      <DependentUpon>FinestraFilmDurataMinore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FinestraRegolazioni.resx">
       <DependentUpon>FinestraRegolazioni.cs</DependentUpon>

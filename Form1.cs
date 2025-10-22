@@ -186,6 +186,8 @@ namespace SacchieroElementoMultimediale
             }
             MessageBox.Show("Elementi multimediali ordinati per titolo");
             lbl_ordinato.Text = "Elementi ordinati";
+            // centra la label
+            lbl_ordinato.Left = (this.ClientSize.Width - lbl_ordinato.Width) / 2;
         }
 
         private void btn_VerificaUgualianza_Click(object sender, EventArgs e)

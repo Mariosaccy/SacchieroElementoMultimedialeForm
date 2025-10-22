@@ -43,10 +43,8 @@ namespace SacchieroElementoMultimediale
             {
                 MessageBox.Show("Seleziona due elementi multimediali diversi");
                 lbl_risposta.Text = "Seleziona due elementi multimediali diversi";
-                return;
-            }
-
-            if (elementi[index1].Equals(elementi[index2]))
+            } 
+            else if(elementi[index1].Equals(elementi[index2]))
             {
                 MessageBox.Show("I due elementi multimediali sono uguali");
                 lbl_risposta.Text = "I due elementi multimediali sono uguali";
@@ -56,6 +54,9 @@ namespace SacchieroElementoMultimediale
                 MessageBox.Show("I due elementi multimediali sono diversi");
                 lbl_risposta.Text = "I due elementi multimediali sono diversi";
             }
+
+            // centra la label di risposta
+            lbl_risposta.Left = (this.ClientSize.Width - lbl_risposta.Width) / 2;
         }
     }
 }

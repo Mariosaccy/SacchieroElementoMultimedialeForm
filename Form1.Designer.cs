@@ -236,7 +236,7 @@
             this.pnl_funzionalita.Controls.Add(this.btn_inferiori);
             this.pnl_funzionalita.Controls.Add(this.btn_regola);
             this.pnl_funzionalita.Controls.Add(this.btn_esegui);
-            this.pnl_funzionalita.Location = new System.Drawing.Point(89, 81);
+            this.pnl_funzionalita.Location = new System.Drawing.Point(89, 97);
             this.pnl_funzionalita.Name = "pnl_funzionalita";
             this.pnl_funzionalita.Size = new System.Drawing.Size(623, 347);
             this.pnl_funzionalita.TabIndex = 12;

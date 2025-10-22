@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SacchieroElementoMultimediale
 {
@@ -23,7 +24,7 @@ namespace SacchieroElementoMultimediale
             {
                 Volume--;
             }
-            Console.WriteLine("Volume diminuito");
+            MessageBox.Show("Volume diminuito");
         }
         public void Louder()
         {
@@ -32,7 +33,7 @@ namespace SacchieroElementoMultimediale
             {
                 Volume++;
             }
-            Console.WriteLine("Volume aumentato");
+            MessageBox.Show("Volume aumentato");
         }
 
         public void Brighter()
@@ -42,7 +43,7 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita++;
             }
-            Console.WriteLine("Luminosità aumentata");
+            MessageBox.Show("Luminosità aumentata");
         }
         public void Darker()
         {
@@ -51,12 +52,12 @@ namespace SacchieroElementoMultimediale
             {
                 Luminosita--;
             }
-            Console.WriteLine("Luminosità diminuita");
+            MessageBox.Show("Luminosità diminuita");
         }
 
-        public override void Play()
+        public override string Play()
         {
-            string testo = "";
+            string testo = $"{Titolo} - ";
             int j = 0;
             for (int i = 0; i < Durata; i++)
             {
@@ -70,8 +71,10 @@ namespace SacchieroElementoMultimediale
                 {
                     testo += "*";
                 }
-                Console.WriteLine($"{Titolo} - {testo}");
+                testo += "\n";
             }
+
+            return testo;
         }
         public override string ToString()
         {

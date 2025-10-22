@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SacchieroElementoMultimediale
 {
@@ -20,7 +21,7 @@ namespace SacchieroElementoMultimediale
             {
                 Volume--;
             }
-            Console.WriteLine("Volume diminuito");
+            MessageBox.Show("Volume diminuito");
         }
         public void Louder()
         {
@@ -29,12 +30,12 @@ namespace SacchieroElementoMultimediale
             {
                 Volume++;
             }
-            Console.WriteLine("Volume aumentato");
+            MessageBox.Show("Volume aumentato");
         }
 
-        public override void Play()
+        public override string Play()
         {
-            string testo = "";
+            string testo = $"{Titolo} - ";
             for (int i = 0; i < Durata; i++)
             {
                 testo = "";
@@ -42,8 +43,10 @@ namespace SacchieroElementoMultimediale
                 {
                     testo += "!";
                 }
-                Console.WriteLine($"{Titolo} - {testo}");
+                testo += "\n";
             }
+
+            return testo;
         }
         public override string ToString()
         {

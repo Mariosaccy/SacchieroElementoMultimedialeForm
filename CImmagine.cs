@@ -33,14 +33,14 @@ namespace SacchieroElementoMultimediale
             Console.WriteLine("Luminosità diminuita");
         }
 
-        public void Show()
+        public string Show()
         {
-            string testo = "";
+            string testo = $"{Titolo} - ";
             for (int i = 0; i < Luminosita; i++)
             {
                 testo += "*";
             }
-            Console.WriteLine($"{Titolo} - {testo}");
+            return testo;
         }
         public override string ToString()
         {

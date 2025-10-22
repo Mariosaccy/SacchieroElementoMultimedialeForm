@@ -152,7 +152,7 @@ namespace SacchieroElementoMultimediale
 
         private void btn_esegui_Click(object sender, EventArgs e)
         {
-
+            new FinestraEsegui(elementi).ShowDialog(); // apro una nuova finestra per eseguire gli elementi multimediali
         }
 
         private void btn_regola_Click(object sender, EventArgs e)

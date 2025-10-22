@@ -27,6 +27,6 @@ namespace SacchieroElementoMultimediale
                 throw new ArgumentException("La durata deve essere un valore positivo.");
             Durata = durata;
         }
-        public abstract void Play();
+        public abstract string Play();
     }
 }

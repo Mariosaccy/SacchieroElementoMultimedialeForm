@@ -69,6 +69,12 @@
     <Compile Include="FinestraRegolazioni.Designer.cs">
       <DependentUpon>FinestraRegolazioni.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinestraVerificaUgualianza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinestraVerificaUgualianza.Designer.cs">
+      <DependentUpon>FinestraVerificaUgualianza.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FinestraRegolazioni.resx">
       <DependentUpon>FinestraRegolazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinestraVerificaUgualianza.resx">
+      <DependentUpon>FinestraVerificaUgualianza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

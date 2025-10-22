@@ -190,12 +190,13 @@ namespace SacchieroElementoMultimediale
 
         private void btn_VerificaUgualianza_Click(object sender, EventArgs e)
         {
-
+            new FinestraVerificaUgualianza(elementi).ShowDialog(); // apro una nuova finestra per verificare l'ugualianza tra due elementi multimediali
         }
 
         private void btn_esci_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Chiusura dell'applicazione");
+            this.Close();
         }
 
         private void trc_volume_Scroll(object sender, EventArgs e)
